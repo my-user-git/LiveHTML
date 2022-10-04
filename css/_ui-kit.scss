@@ -1,0 +1,86 @@
+/* top menu */
+
+.header-content {
+  /* top menu */
+
+  &__right-link {
+    transition: color .3s ease-in-out;
+  }
+
+  &__right-link::before {
+    position: absolute;
+    content: '';
+    top: -3px;
+    right: 20px;
+    bottom: -3px;
+    left: -3px;
+    transition: backround-color .3s ease-in-out;
+    z-index: -1;
+  }
+
+  &__right-link:hover::before,
+  &__right-link:focus::before {
+    background-color: $yellow;
+  }
+
+  &__right-link:hover,
+  &__right-link:focus {
+    color: $white;
+    z-index: 1;
+  }
+
+  /* user */
+
+  &__user-link {
+    transition: color .3s ease-in-out;
+  }
+
+  &__user-link::after {
+    position: absolute;
+    content: '';
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: 22px;
+    transition: backround-color .3s ease-in-out;
+    z-index: -1;
+  }
+
+  &__user-link:first-child::after {
+    left: -3px;
+  }
+
+  &__user-link:hover::after,
+  &__user-link:focus::after {
+    background-color: $yellow;
+  }
+
+  &__user-link:hover,
+  &__user-link:focus {
+    color: $white;
+    z-index: 1;
+  }
+
+  /* bottom-menu */
+
+  &__bottom-link {
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $black25;
+      background-color: $yellow;
+    }
+  }
+
+  /* product */
+
+  &__product-item {
+    transition: transform .3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+}

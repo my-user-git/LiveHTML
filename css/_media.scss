@@ -1,0 +1,127 @@
+@media (max-width: 1215px) {
+
+  .header-content {
+    &__bottom {
+      &-link {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1202px) {
+  .header-content {
+    column-gap: 10px;
+
+    &__right {
+      grid-template-columns: minmax(auto, 200px) 1fr minmax(auto, 230px) minmax(auto, 160px);
+      column-gap: 10px;
+    }
+
+    &__banner-img {
+      width: 200px;
+    }
+
+    &__company {
+      justify-content: center;
+    }
+
+    &__tel {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__cart {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__bottom {
+      &-menu {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1072px) {
+  .header-content {
+    &__right {
+
+      &-link {
+        padding-right: 15px;
+      }
+
+      &-menu {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-content {
+    &__right {
+
+      &-link {
+        padding-right: 15px;
+      }
+    }
+
+    &__cart {
+      &-in {
+        transform: scale(0, 0);
+        transition: transform .3s ease-in-out;
+      }
+    }
+
+    &__favourites-link {
+      transform: scale(0, 0);
+      transition: transform .3s ease-in-out;
+    }
+
+    &__compare {
+      transform: scale(0, 0);
+      transition: transform .3s ease-in-out;
+    }
+
+    &__user {
+      transform: scale(0, 0);
+      transition: transform .3s ease-in-out;
+
+      &-icon {
+        transform: scale(1);
+      }
+    }
+
+    &__action {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  /* open */
+
+  .open {
+    &__user {
+      position: absolute;
+      right: 40px;
+      top: -5px;
+      padding: 20px 20px 20px 20px;
+      background-color: $white;
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+      transform: scale(1);
+    }
+
+    &__cart {
+      position: absolute;
+      left: 20px;
+      top: -5px;
+      padding: 10px;
+      background-color: $white;
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+      transform: scale(1);
+    }
+  }
+}

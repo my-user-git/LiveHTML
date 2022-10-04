@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LH_TestHeader</title>
+  <link rel="stylesheet" href="/css/choices.min.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <div class="header-content__logo">
+        <svg class="header-content__logo-icon" width="210" height="134" viewbox="0 0 210 134" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/sprite.svg#logo"></use>
+        </svg>
+      </div>
+      <div class="header-content__right">
+        <div class="header-content__top">
+          <nav class="header-content__right-menu">
+            <a class="header-content__right-link header-content__right-link-active" href="">
+              Каталог инструментов
+            </a>
+            <a class="header-content__right-link" href="">
+              Все для сада
+            </a>
+            <a class="header-content__right-link" href="">
+              Ручной инструмент
+            </a>
+            <a class="header-content__right-link" href="">
+              Электрика
+            </a>
+            <a class="header-content__right-link" href="">
+              Доставка
+            </a>
+            <a class="header-content__right-link" href="">
+              Оплата
+            </a>
+            <a class="header-content__right-link" href="">
+              О нас
+            </a>
+          </nav>
+          <div class="header-content__user">
+            <a class="header-content__user-link" href="">
+              Вход
+            </a>
+            <a class="header-content__user-link" href="">
+              Регистрация
+            </a>
+          </div>
+          <svg class="header-content__user-icon" width="30" height="30" viewbox="0 0 30 30" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/sprite.svg#user"></use>
+          </svg>
+        </div>
+        <div class="header-content__banner">
+          <div class="header-content__banner-img"></div>
+        </div>
+        <div class="header-content__wrap-cart">
+          <div class="header-content__cart">
+            <svg class="header-content__cart-icon" width="19" height="18" viewbox="0 0 19 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/sprite.svg#cart"></use>
+            </svg>
+            <div class="header-content__cart-in">
+              3 шт. / <span class="header-content__cart-price">17 250 р.</span>
+            </div>
+          </div>
+          <div class="header-content__favourites">
+            <svg class="header-content__favourites-icon" width="14" height="14" viewbox="0 0 14 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/sprite.svg#star"></use>
+            </svg>
+            <a class="header-content__favourites-link" href="">
+              Избранное
+              <span class="header-content__favourites-quantity">
+                (7)
+              </span>
+            </a>
+          </div>
+          <div class="header-content__balance">
+            <svg class="header-content__balance-icon" width="18" height="16" viewbox="0 0 18 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/sprite.svg#balance"></use>
+            </svg>
+            <a class="header-content__compare" href="">
+              К сравнению
+              <span class="header-content__compare-quantity">
+                (5)
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="header-content__product">
+          <a class="header-content__product-item" href="">
+            <picture class="header-content__product-img">
+              <source srcset="" media="(max-width:320px)">
+              <source srcset="" media="(max-width:768px)">
+              <source srcset="" media="(max-width:1024px)">
+              <img class="header-content__img" src="images/product-1.png" alt="">
+            </picture>
+          </a>
+          <a class="header-content__product-item" href="">
+            <picture class="header-content__product-img">
+              <source srcset="" media="(max-width:320px)">
+              <source srcset="" media="(max-width:768px)">
+              <source srcset="" media="(max-width:1024px)">
+              <img class="header-content__img" src="images/product-2.png" alt="">
+            </picture>
+          </a>
+          <a class="header-content__product-item" href="">
+            <picture class="header-content__product-img">
+              <source srcset="" media="(max-width:320px)">
+              <source srcset="" media="(max-width:768px)">
+              <source srcset="" media="(max-width:1024px)">
+              <img class="header-content__img" src="images/product-3.png" alt="">
+            </picture>
+          </a>
+        </div>
+        <div class="header-content__company">
+          <div class="header-content__time">
+            Время работы:
+          </div>
+          <div class="header-content__hours">
+            <span>10:00 &mdash; 19:00</span>
+          </div>
+          <a class="header-content__tel" href="tel:+74957212525">8 495 721-25-25</a>
+        </div>
+        <form class="header-content__region" action="https://jsonplaceholder.typicode.com/posts" method="POST"
+          name="region-form" aria-label="Здесь можно выбрать интересующий вас регион">
+          <select class="header-content__region-select" name="region" id="region">
+            <option value="">Москва</option>
+            <option value="">Казань</option>
+            <option value="">Уфа</option>
+            <option value="">Пермь</option>
+          </select>
+          <label class="header-content__region-label" for="region">Сменить</label>
+        </form>
+      </div>
+      <div class="header-content__bottom">
+        <form class="header-content__search" action="https://jsonplaceholder.typicode.com/posts" method="POST"
+          tabindex="0">
+          <button class="header-content__search-magnifier" aria-label="Кнопка поиска" type="button">
+            <svg class="header-content__magnifying-icon" width="20" height="20" viewbox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="images/sprite.svg#magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+        <nav class="header-content__bottom-menu">
+          <a class="header-content__bottom-link header-content__bottom-link-active" href="">
+            Перфораторы
+          </a>
+          <a class="header-content__bottom-link" href="">
+            Дрели
+          </a>
+          <a class="header-content__bottom-link" href="">
+            Шлифмашины
+          </a>
+          <a class="header-content__bottom-link" href="">
+            Пистолеты
+          </a>
+          <a class="header-content__bottom-link" href="">
+            Электропилы
+          </a>
+          <a class="header-content__bottom-link" href="">
+            Наборы инструментов
+          </a>
+          <a class="header-content__bottom-link" href="">
+            Аксессуары
+          </a>
+        </nav>
+        <div class="header-content__action">
+          Распродажа
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main"></main>
+  <footer class="footer"></footer>
+  <script src="js/choices.min.js"></script>
+  <script src="js/z-my-choices.js"></script>
+  <script defer src="js/open.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+/* header */
+
+.header-content {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "logo right"
+    "bottom bottom";
+  grid-template-columns: minmax(auto, 210px) 1fr;
+  grid-template-rows: minmax(auto, 134px) 1fr;
+  column-gap: 30px;
+  row-gap: 29px;
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__bottom {
+    grid-area: bottom;
+  }
+
+  &__right {
+    display: grid;
+    grid-template-areas:
+      "top top top top"
+      "left center-1 center-2 center-right"
+      ". . . bottom-right";
+    grid-template-columns: minmax(auto, 253px) 1fr minmax(auto, 266px) minmax(auto, 184px);
+    grid-template-rows: 1fr minmax(auto, 70px) 1fr;
+    column-gap: 30px;
+  }
+
+  &__top {
+    grid-area: top;
+  }
+
+  &__banner {
+    grid-area: left;
+  }
+
+  &__wrap-cart {
+    grid-area: center-1;
+  }
+
+  &__product {
+    grid-area: center-2;
+  }
+
+  &__company {
+    grid-area: center-right;
+  }
+
+  &__region {
+    grid-area: bottom-right;
+  }
+}
